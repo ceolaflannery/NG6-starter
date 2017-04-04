@@ -1,22 +1,30 @@
 @import '../common';
 
 .navbar {
-  height: 6.5rem;
-  background-color: $primaryColor;
-  padding: 1rem;
+  background-color: $bgColor;
 
-  .nav-links,
-  .logo {
+  div {
     display: inline-block;
   }
 
-  .logo {
-    color: $lightTextColor;
-    margin-right: 50%;
+  span {
+    color: $darkBgColor;
+    font-size: 0.8rem;
+    padding: 10px;
+    a {
+      text-decoration: none;
+    }
+  }
+  .nav-main, .nav-links {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
-  .nav-links span {
-    color: $lightTextColor;
-    font-size: 1.6rem;
+  .nav-links {
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: $darkBgColor;
   }
 }

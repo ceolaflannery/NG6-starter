@@ -1,0 +1,16 @@
+<navbar></navbar>
+<header>
+  <hero></hero>
+  <input type="text" ng-model="searchTerm" ng-model-options="{ debounce: 800 }" placeholder="Search"/>
+  <button ng-click="findAgents()">search</button>
+</header>
+<div>
+  <ul class="agents">
+    <li
+      ng-repeat="agent in ::$ctrl.agents">
+      {{ agent.image }}
+      {{ agent.name }}
+      {{ agent.agency }}
+    </li>
+  </ul>
+</div>
